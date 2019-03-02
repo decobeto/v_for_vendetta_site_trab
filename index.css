@@ -1,0 +1,132 @@
+html{
+  overflow:hidden;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 0;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  transition: transform 1s, opacity 0.8s;
+  background-color: black;
+}
+
+section:target {
+  transform: rotate(0deg);
+  z-index: 0;
+  background-size: 100%;
+}
+
+section:target ~ section {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Srisakdi', cursive;
+}
+
+p.navegacao{
+  color: white;
+  font-family: 'Srisakdi', cursive;
+}
+
+#slide1{
+
+}
+
+#slide2{
+ 
+}
+
+#slide3{
+ 
+}
+
+#slide4{
+ 
+}
+
+#slide5{
+ 
+}
+
+div#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+img#imagem_logo {
+  height: 45em;
+  width: 45em;
+}
+
+p.titulo{
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 15em;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 5s;
+}
+
+figcaption{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 10px;
+}
+
+p.texto{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  position:relative;
+  overflow:hidden;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.pagina{
+  padding: 15em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.conteudo{
+  float: left;
+  width: 50%;
+}
+
+.foto_capa{
+  float: left;
+  width: 50%;
+}
+
+.imagem{
+  padding: 10em;
+  text-align: center;
+}
+
+
